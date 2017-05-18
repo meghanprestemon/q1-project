@@ -1,0 +1,69 @@
+/*RANDOM QUOTE GENERATOR*/
+
+#quote-box {
+  background-color: rgba(209, 200, 150, 0.7);
+  border: 3px solid rgb(87, 101, 42);
+  position: relative;
+  width: 750px;
+  padding: 10px 20px;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.author {
+  padding-top: 10px;
+}
+
+.twitter-share-button {
+  color: #00aced;
+  position: absolute;
+  right: 30px;
+}
+
+#getMessage {
+  margin: auto;
+  transform: translateY(29px);
+  border: 2px solid rgb(87, 101, 42);
+  background-color: #dbd3a2;
+  color: rgb(87, 101, 42);
+}
+
+#home-divider {
+  width: 70%;
+  margin-top: 50px;
+}
+
+/*LOCATOR*/
+
+#find-studio-header {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#search-form {
+  margin-top: 25px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+/*VIDEOS*/
+#video-header {
+  margin-top: 90px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.video-row {
+  width: 85%;
+  margin: auto;
+}
+
+.panel {
+  text-align: center;
+}

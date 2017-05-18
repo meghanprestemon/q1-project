@@ -1,0 +1,17 @@
+{
+  "name": "be_well",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  },
+  "scripts": {
+    "lint": "eslint public/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
