@@ -8,4 +8,4 @@ The home page also allows the user to locate yoga studios near their current loc
 
 There is also a 'videos' page that allows the user to watch yoga videos embedded from YouTube.
 
-The entire website is styled using Bootstrap and Bootswatch's free theme 'Sandstone'.
+The entire website is styled using Bootstrap with Bootswatch's free theme 'Sandstone'.
