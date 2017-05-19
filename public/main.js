@@ -30,7 +30,7 @@ var map, infoWindow;
 function initMap() {
    map = new google.maps.Map(document.getElementById('map'), {
      center: {lat: 42.9470, lng: 76.4291},
-     zoom: 13
+     zoom: 14
    });
    infoWindow = new google.maps.InfoWindow;
 
@@ -44,7 +44,7 @@ function initMap() {
 
        map.setCenter(pos);
 
-       let locationSearchResults = fetch(`${GOOGLE_PLACES_BASE_URL}keyword=yoga&location=${pos.lat},${pos.lng}&radius=10000&key=${GOOGLE_PLACES_API_KEY}`);
+       let locationSearchResults = fetch(`${GOOGLE_PLACES_BASE_URL}keyword=yoga&location=${pos.lat},${pos.lng}&radius=7500&key=${GOOGLE_PLACES_API_KEY}`);
        locationSearchResults
          .then(response => response.json())
          .then((places) => {
@@ -128,8 +128,8 @@ $(document).ready(function () {
 
   $(".twitter-share-button").on("click", function (e) {
     e.preventDefault();
-    var twitterUrl = 'https://twitter.com/intent/tweet?text="' + encodeURIComponent(quoteData.quoteText) + '" - ' + encodeURIComponent(quoteData.quoteAuthor) + '&hashtags=quotes';
-    if (('"' + quoteData.quoteText + '" - ' + quoteData.quoteAuthor + ' #quotes').length > 140) {
+    var twitterUrl = `https://twitter.com/intent/tweet?text="${encodeURIComponent(quoteData.quoteText)}" - ${encodeURIComponent(quoteData.quoteAuthor)}&hashtags=quotes`;
+    if ((`"${quoteData.quoteText}" - ${quoteData.quoteAuthor} #quotes`).length > 140) {
       var confirm = window.confirm("This quote is over 140 characters! Would you still like to tweet this quote?");
       if (confirm) {
         window.open(twitterUrl);

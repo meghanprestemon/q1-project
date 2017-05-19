@@ -67,3 +67,12 @@
 .panel {
   text-align: center;
 }
+
+/*FOOTER*/
+.footer {
+  margin-top: 10px;
+  padding: 20px 0px;
+  text-align: center;
+  background-color: #3e3f3a;
+  color: white;
+}
