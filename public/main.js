@@ -2,7 +2,7 @@
 var quoteData = {}
 
 function getData () {
-    $.getJSON("http://api.forismatic.com/api/1.0/","method=getQuote&lang=en&format=jsonp&jsonp=?", function(data) {
+    $.getJSON("https://api.forismatic.com/api/1.0/","method=getQuote&lang=en&format=jsonp&jsonp=?", function(data) {
     $(".message").html('"' + data.quoteText + '"');
 
     if (data.quoteAuthor === "") {
